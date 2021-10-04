@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Header/>
     <section class="section-hero">
       <div class="hero">
         <div class="hero-text-box">
@@ -34,21 +35,31 @@
         </div>
       </div>
     </section>
+    <section class="section-how">
+      <div>Test 1</div>
+      <div>Test 1</div>
+      <div>Test 1</div>
+      <div>Test 1</div>
+    </section>
   </div>
 </template>
 
 <script>
-export default {};
+import Header from './components/Header.vue';
+export default {
+  components: { Header },
+};
 </script>
 
 <style>
 .section-hero{
 background-color: #fdf2e9;
-padding: 9.6rem 0 ;
+padding: 4.8rem 0 9.6rem 0 ;
 }
 .hero {
   max-width: 130rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -66,33 +77,6 @@ padding: 9.6rem 0 ;
   font-size: 2rem;
   line-height: 1.5;
   margin-bottom: 4.8rem;
-}
-.btn:link, .btn:visited{
-  display: inline-block;
-  font-size: 2rem;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 1.6rem 3.2rem;
-  border-radius: 9px ;
-  transition: all 1s;
-}
-.btn--full:link, .btn--full:visited{
-  background-color: #e67e22;
-  color: #fff;
-}
-.btn--full:hover, .btn--full:active{
-  background-color: #cf711f;
-  color: #fff;
-  
-}
-.btn--outline:link, .btn--outline:visited{
-  background-color: #fff;
-  color: #555;
-}
-.btn--outline:hover, .btn--outline:active{
-  background-color: #fdf2e9;
-  /* Trick to add border inside */
-  box-shadow: inset 0 0 0 3px #fff;
 }
 .hero-img{
   width: 100%;
