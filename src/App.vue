@@ -36,10 +36,12 @@
       </div>
     </section>
     <section class="section-how">
-      <div>Test 1</div>
-      <div>Test 1</div>
-      <div>Test 1</div>
-      <div>Test 1</div>
+      <div class="container grid grid--2-cols">
+        <div>Test 1</div>
+        <div>Test 2</div>
+        <div>Test 3</div>
+        <div>Test 4</div>
+      </div>
     </section>
   </div>
 </template>
@@ -110,5 +112,33 @@ padding: 4.8rem 0 9.6rem 0 ;
 .delivered-text span{
   color: #cf711f;
   font-weight: 700;
+}
+.section-how{
+  padding: 9.6rem 0;
+  background-color: orangered;
+}
+.container{
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+.grid{
+  display: grid;
+  gap: 9.6rem;
+  
+}
+.grid--2-cols{
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols{
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols{
+  grid-template-columns: repeat(4, 1fr);
+}
+.section-how div div{
+  padding: 100px;
+  font-size: 50px;
+  background-color: #333;
 }
 </style>
