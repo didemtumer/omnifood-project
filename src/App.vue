@@ -57,6 +57,7 @@
         </div>
       </div>
     </section>
+    <SectionFeatured/>
     <SectionHow />
   </div>
 </template>
@@ -64,10 +65,12 @@
 <script>
 import Header from "./components/Header.vue";
 import SectionHow from "./components/SectionHow.vue";
+import SectionFeatured from "./components/SectionFeatured.vue";
 export default {
   components: {
     Header,
     SectionHow,
+    SectionFeatured,
   },
   methods: {
   
@@ -107,7 +110,7 @@ export default {
   margin-bottom: 9.6rem;
 }
 .heading-tertiary {
-  font-size: 3.6rem;
+  font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
 }
@@ -165,7 +168,8 @@ export default {
 }
 .grid {
   display: grid;
-  gap: 9.6rem;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
@@ -175,5 +179,8 @@ export default {
 }
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+.grid-center-v{
+  align-items: center;
 }
 </style>
