@@ -57,8 +57,9 @@
         </div>
       </div>
     </section>
-    <SectionFeatured/>
+    <SectionFeatured />
     <SectionHow />
+    <SectionMeal />
   </div>
 </template>
 
@@ -66,15 +67,15 @@
 import Header from "./components/Header.vue";
 import SectionHow from "./components/SectionHow.vue";
 import SectionFeatured from "./components/SectionFeatured.vue";
+import SectionMeal from "./components/SectionMeal.vue";
 export default {
   components: {
     Header,
     SectionHow,
     SectionFeatured,
+    SectionMeal,
   },
-  methods: {
-  
-  },
+  methods: {},
 };
 </script>
 
@@ -131,9 +132,6 @@ export default {
 .hero-img {
   width: 100%;
 }
-.margin-right-small {
-  margin-right: 1.6rem !important;
-}
 .delivered-meals {
   display: flex;
   margin-top: 8rem;
@@ -180,7 +178,7 @@ export default {
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
-.grid-center-v{
+.grid-center-v {
   align-items: center;
 }
 </style>
